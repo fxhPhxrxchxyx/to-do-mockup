@@ -46,16 +46,16 @@ const Login = () => {
         >
           EMAIL OR PHONE NUMBER
         </Typography>
-        <ThemeProvider theme={createTheme({ palette: { mode: "dark" } })}>
-          <Box
-            backgroundColor="#E4EEFD"
-            borderRadius={2}
-            padding="4px"
-            width="100%"
-          >
-            <TextField variant="standard" fullWidth size="small" />
-          </Box>
-        </ThemeProvider>
+
+        <Box
+          backgroundColor="#E4EEFD"
+          borderRadius={2}
+          padding="4px"
+          width="100%"
+        >
+          <TextField variant="standard" fullWidth size="small" />
+        </Box>
+
         <Typography
           color="#C5C5C5"
           fontWeight="600"
@@ -66,7 +66,7 @@ const Login = () => {
           PASSWORD
         </Typography>
         <ThemeProvider theme={createTheme({ palette: { mode: "dark" } })}>
-          <TextField variant="standard" fullWidth />
+          <TextField variant="standard" fullWidth type="password" />
         </ThemeProvider>
         <Box
           component="a"
@@ -96,11 +96,10 @@ const Login = () => {
         <Typography color="white" fontWeight="600" padding="15px">
           Unable to Login?
         </Typography>
-        <Box>
-          <Typography variant="body" color="#fff" textAlign="center">
-            <div>Listen to some music, relax yourself,</div>
-            <div>and take a deep breath until you</div>
-            <div>can remember your password.</div>
+        <Box textAlign="center">
+          <Typography variant="body" color="#fff">
+            Listen to some music, relax yourself, and take a deep breath until
+            you can remember your password.
           </Typography>
         </Box>
       </Stack>

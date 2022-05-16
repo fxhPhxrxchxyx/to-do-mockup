@@ -43,6 +43,7 @@ const Navbar = () => {
               display: "flex",
               justifyContent: "space-between",
             }}
+            href="pages/Login.js"
           >
             Login
           </Box>
@@ -53,6 +54,7 @@ const Navbar = () => {
               borderRadius: "10px",
               display: "flex",
             }}
+            href="pages/App.js"
           >
             Home
           </Box>
