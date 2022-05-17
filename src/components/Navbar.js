@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Box
@@ -35,29 +36,31 @@ const Navbar = () => {
           </Typography>
         </Box>
         <Box sx={{ display: "flex", gap: "10px" }}>
-          <Box
-            sx={{
-              background: "#EAEAEA",
-              padding: "5px 20px",
-              borderRadius: "10px",
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-            href="pages/Login.js"
-          >
-            Login
-          </Box>
-          <Box
-            sx={{
-              background: "#EAEAEA",
-              padding: "5px 20px",
-              borderRadius: "10px",
-              display: "flex",
-            }}
-            href="pages/App.js"
-          >
-            Home
-          </Box>
+          <Link to="/">
+            <Box
+              sx={{
+                background: "#EAEAEA",
+                padding: "5px 20px",
+                borderRadius: "10px",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              Login
+            </Box>
+          </Link>
+          <Link to="/home">
+            <Box
+              sx={{
+                background: "#EAEAEA",
+                padding: "5px 20px",
+                borderRadius: "10px",
+                display: "flex",
+              }}
+            >
+              Home
+            </Box>
+          </Link>
         </Box>
       </Box>
     </Box>

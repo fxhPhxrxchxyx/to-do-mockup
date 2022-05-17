@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <Box
@@ -75,18 +76,20 @@ const Login = () => {
         >
           Forget your password?
         </Box>
-        <Typography
-          backgroundColor="#505CEA"
-          color="white"
-          fontWeight="600"
-          padding="12px"
-          margin="8px"
-          width="100%"
-          textAlign="center"
-          borderRadius="6px"
-        >
-          Loging
-        </Typography>
+        <Link to="/">
+          <Typography
+            backgroundColor="#505CEA"
+            color="white"
+            fontWeight="600"
+            padding="12px"
+            margin="8px"
+            width="100%"
+            textAlign="center"
+            borderRadius="6px"
+          >
+            Loging
+          </Typography>
+        </Link>
         <Typography color="#fff" alignSelf="start">
           Need an account? <a style={{ color: "#0095D2" }}>Register</a>
         </Typography>
